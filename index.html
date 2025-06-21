@@ -31,6 +31,9 @@
                 During my Master's I was fortunate to work with Prof. Chen Feng AI4CE Lab on scene representation for robotics and Dr. Yubei Chen on unsupervised representation learning. 
                 I am interested in learning scene representations that are useful for robots to understand the world and interact with it.
               </p>
+              <p>
+                I am currently working as a summer intern at Samsung Research America, with <a href="https://luoweizhou.github.io/">Dr. Luowei Zhou</a>.
+              </p>
               <p style="text-align:center">
                 <a href="mailto:jz4725@nyu.edu">Email</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/juexiao-zhang-788453146/">LinkedIn</a> &nbsp/&nbsp
@@ -78,6 +81,95 @@
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/intact.png' width="200">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2310.04496">
+              <papertitle>From Intention to Execution Probing the Generalization Boundaries of Vision-Language-Action Models</papertitle>
+            </a>
+            <br>
+            <a href="https://irvingf7.github.io/">Irving Fang*</a>,
+            <strong>Juexiao Zhang *</strong><sup>&dagger;</sup>,
+            <a href="https://tsb0601.github.io/">Shengbang Tong</a>,   
+            <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ">Chen Feng</a>, 
+            (* for equal contribution, <sup>&dagger;</sup> for project lead)
+            <br>
+            <em>Under review</em>
+            <br>
+            <a href="https://arxiv.org/abs/2506.09930">arXiv</a>
+              <!-- / -->
+            <a href="https://ai4ce.github.io/INT-ACT/">Project Page</a>
+            /
+            <a href="https://github.com/ai4ce/INT-ACT">Code</a>
+            /
+            <a href="https://huggingface.co/collections/ai4ce/intact-probing-suite-684e5601e9ed640fdd9b994b">HuggingFace</a>
+            <p></p>
+            <p>Can your VLA generalize like a VLM? INT-ACT may give you some clue.</p>
+          </td>
+        </tr>
+
+      <tr onmouseout="seedo_stop()" onmouseover="seedo_start()">
+          <!-- <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src='images/seedo.jpg' width="200">
+          </td> -->
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='seedo_after'>
+                <video width=100% height=100% id="seedo_video" muted autoplay loop>
+                  <source src="./images/seedo/seedo_after.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <img src='./images/seedo/seedo.jpg' width="160" height="160" id="seedo_image">
+            </div>
+            <script type="text/javascript">
+              
+              function seedo_start() {
+                // when mouse is over the image, make the video visible
+                document.getElementById('seedo_after').style.opacity = "1";
+                // make the image invisible
+                document.getElementById('seedo_image').style.opacity = "0";
+                document.getElementById('seedo_video').play(); // somehow this can prevent jittering
+              }
+
+              function seedo_stop() {
+                document.getElementById('seedo_after').style.opacity = "0";
+                //make the image visible again
+                document.getElementById('seedo_image').style.opacity = "1";
+                document.getElementById('seedo_video').pause(); // somehow this can prevent jittering
+                document.getElementById('seedo_video').currentTime = 0;
+              }
+              seedo_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://ai4ce.github.io/SeeDo/">
+              <papertitle>VLM See, Robot Do:
+                Human Demo Video to Robot Action Plan via Vision Language Model</papertitle>
+            </a>
+            <br>
+            <a href="https://scholar.google.com/citations?user=ACFrFnYAAAAJ&hl=en">Beichen Wang*</a>, 
+            <strong>Juexiao Zhang*</strong>, 
+            <a href="https://www.linkedin.com/in/shuwen-dong-1342832b1/">Shuwen Dong&dagger;</a>, 
+            <a href="https://irvingf7.github.io/">Irving Fang&dagger;</a>, 
+            <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ&hl=en">Chen Feng</a>
+            (*&dagger; for equal contribution)
+            <br>
+            <em>IROS 2025</em>
+            <br>
+            <a href="">arXiv</a>
+            /
+            <a href="https://ai4ce.github.io/SeeDo/">project page</a>
+            /
+            <a href="https://github.com/ai4ce/SeeDo">code</a>
+            <p></p>
+            <p>Let the robot follow a human's actions by just watching one video.</p>
+          </td>
+        </tr>
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
             <img src='images/citywalker.png' width="200">
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
@@ -95,7 +187,7 @@
             <a href="https://www.linkedin.com/in/jing-zhang-4b7163285/">Jing Zhang</a>,   
             <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ">Chen Feng</a>, 
             <br>
-            <em>Under review.</em>
+            <em>CVPR 2025</em>
             <br>
             <a href="https://arxiv.org/abs/2411.17820">arXiv</a>
               <!-- / -->
@@ -193,64 +285,6 @@
           </td>
         </tr>
 
-        <tr onmouseout="seedo_stop()" onmouseover="seedo_start()">
-          <!-- <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src='images/seedo.jpg' width="200">
-          </td> -->
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='seedo_after'>
-                <video width=100% height=100% id="seedo_video" muted autoplay loop>
-                  <source src="./images/seedo/seedo_after.mp4" type="video/mp4">
-                </video>
-              </div>
-
-              <img src='./images/seedo/seedo.jpg' width="160" height="160" id="seedo_image">
-            </div>
-            <script type="text/javascript">
-              
-              function seedo_start() {
-                // when mouse is over the image, make the video visible
-                document.getElementById('seedo_after').style.opacity = "1";
-                // make the image invisible
-                document.getElementById('seedo_image').style.opacity = "0";
-                document.getElementById('seedo_video').play(); // somehow this can prevent jittering
-              }
-
-              function seedo_stop() {
-                document.getElementById('seedo_after').style.opacity = "0";
-                //make the image visible again
-                document.getElementById('seedo_image').style.opacity = "1";
-                document.getElementById('seedo_video').pause(); // somehow this can prevent jittering
-                document.getElementById('seedo_video').currentTime = 0;
-              }
-              seedo_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://ai4ce.github.io/SeeDo/">
-              <papertitle>VLM See, Robot Do:
-                Human Demo Video to Robot Action Plan via Vision Language Model</papertitle>
-            </a>
-            <br>
-            <a href="https://scholar.google.com/citations?user=ACFrFnYAAAAJ&hl=en">Beichen Wang*</a>, 
-            <strong>Juexiao Zhang*</strong>, 
-            <a href="https://www.linkedin.com/in/shuwen-dong-1342832b1/">Shuwen Dong&dagger;</a>, 
-            <a href="https://irvingf7.github.io/">Irving Fang&dagger;</a>, 
-            <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ&hl=en">Chen Feng</a>
-            (*&dagger; for equal contribution)
-            <br>
-            <em>Under review.</em>
-            <br>
-            <a href="">arXiv</a>
-            /
-            <a href="https://ai4ce.github.io/SeeDo/">project page</a>
-            /
-            <a href="https://github.com/ai4ce/SeeDo">code</a>
-            <p></p>
-            <p>Let the robot follow a human's actions by just watching one video.</p>
-          </td>
-        </tr>
 
         <tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
